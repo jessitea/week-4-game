@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>RPG</title>
+	<title>Star Wars RPG</title>
 	
 	<!-- Link to CSS stylesheets -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -10,25 +10,86 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<!-- Google Font -->
+	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Kumar+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 	
-	<!-- Link to JQuery -->
-	<script src="https://code.jquery.com/jquery.js"></script>
 
 </head>
 <body>
+	
+	<!-- Title -->
+	<header>
+	Star Wars RPG
+	</header>
 
-<header>
-Star Wars RPG
-</header>
+	<div class="container">
 
-<div id="characterssection"></div>
-<div id="yourcharacter"></div>
-<div id="enemycharacter"></div>
-<div id="enemiessection"></div>
+		<div class="row">
+
+			<div class="col-md-1"></div>
+
+			<!-- Where characters selections appear -->
+			<div class="col-md-10" id="characterchoices">
+			
+				<h3 class="sectiontitle">Select Your Character</h3>
+
+			</div>
+
+			<div class="col-md-1"></div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-1"></div>
+
+			<!-- Where Characters Fight -->
+			<div class="col-md-10 fightarea">
+				<div class="row">
+					<div class="col-md-6 yourcharacter">You<br></div>
+					<div class="col-md-6 enemycharacter">Enemy<br></div>
+				</div>
+				<!-- Attack button -->
+				<footer>
+					<button class="btn" id="attack">Attack</button>
+				</footer>
+			</div>
+
+			<div class="col-md-1"></div>	
+		</div>
+		
+		<!-- Where Enemy choices appear after selecting own character -->
+
+		<div class="row">
+
+			<div class="col-md-1"></div>
+
+				<div class="col-md-10 enemychoices">
+				
+					<h3 class="sectiontitle">Select Your Opponent</h3>
+
+				</div>
+
+			<div class="col-md-1"></div>
+		</div>
+
+		<!-- Reset button -->
+		<div id="reset">
+			<button class="btn" id="resetbtn">Reset</button>
+		</div>
+
+	</div>
 
 </body>
 
+<!-- Link to JQuery -->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+<!-- Link to Javascript file -->
 <script src="assets/javascript/game.js"></script>
 </html>

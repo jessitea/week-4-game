@@ -1,3 +1,11 @@
+
+body {
+
+	background-image: url("../images/deathstar.jpg");
+
+}
+
+
 header {
 
 	font-family: 'Kumar One', cursive;
@@ -5,8 +13,92 @@ header {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	font-size: 40px;
-	border-style: dashed;
-	border-width: 1px;
 	width: 40%;
 	margin: 0 auto;
+	color: white;
 }
+
+#characterchoices {
+
+	margin: 0 auto;
+	font-size: 20px;
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	color: white;
+	padding-bottom: 20px;
+}
+
+.character {
+
+	font-size: 18px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: blue;
+	background-color: white;
+	color: black;
+	width: 200px;
+	margin: 5px;
+	display: inline-block;
+}
+
+
+div.fightarea {
+
+	border-style: dashed;
+	border-width: 1px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	color: white;
+	background-color: rgba(181,185,194,0.7);
+	font-weight: bold;
+
+}
+
+#yourcharacter {
+	float: left;
+	margin: 0 auto;
+
+}
+
+#enemycharacter {
+
+	float: left;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+div.enemychoices {
+
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+footer {
+
+	width: 100%;
+	clear: both;
+}
+
+#attack {
+
+	color: red;
+	visibility: hidden;
+}
+
+#reset {
+
+	margin: 0 auto;
+	color: black;
+	padding: 25px;
+	visibility: hidden;
+	
+}
+
+
+
